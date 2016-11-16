@@ -1,0 +1,23 @@
+<!DOCTYPE html >
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="js/app.js"></script>
+
+</head>
+<body>
+
+    <div ng-controller="MyControler as main">
+
+        <p>Nom : {{ main.user.name | capitalize }}</p>
+        <p>Account Type : {{ main.user.accountType | capitalize }}</p>
+        <p>Balance : {{ main.user.balance | currency }}</p>
+        <p>Last Login : {{ main.user.lastLogin | date: "MM/dd/yyyy hh:mm:ss" }}</p>
+
+    </div>
+
+</body>
+</html>
