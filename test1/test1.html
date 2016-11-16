@@ -17,6 +17,10 @@
         <p>Balance : {{ main.user.balance | currency }}</p>
         <p>Last Login : {{ main.user.lastLogin | date: "MM/dd/yyyy hh:mm:ss" }}</p>
 
+        <hr>
+
+        {{ main.user | json }}
+
     </div>
 
 </body>
